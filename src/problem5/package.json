@@ -1,0 +1,51 @@
+{
+  "name": "problem5",
+  "version": "1.0.0",
+  "description": "Modern CRUD API with Express.js, TypeScript, and Drizzle ORM",
+  "main": "dist/server.js",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "tsx src/db/migrate.ts",
+    "db:studio": "drizzle-kit studio",
+    "docker:build": "docker build -t crud-server .",
+    "docker:run": "docker run -p 3031:3031 crud-server",
+    "docker:compose": "docker-compose up -d",
+    "docker:down": "docker-compose down"
+  },
+  "keywords": [
+    "express",
+    "typescript",
+    "drizzle",
+    "crud",
+    "api",
+    "docker"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "better-sqlite3": "^11.5.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "drizzle-orm": "^0.36.4",
+    "express": "^4.19.2",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.11",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^22.10.1",
+    "@types/supertest": "^6.0.3",
+    "drizzle-kit": "^0.28.1",
+    "jest": "^30.2.0",
+    "supertest": "^7.1.4",
+    "ts-jest": "^29.4.6",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
