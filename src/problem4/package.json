@@ -1,0 +1,20 @@
+{
+  "name": "problem4",
+  "version": "1.0.0",
+  "description": "Three implementations of sum to n function",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "ts-node src/index.ts"
+  },
+  "keywords": ["typescript", "algorithm"],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  }
+}
